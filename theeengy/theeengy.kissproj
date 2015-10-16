@@ -1,3 +1,5 @@
 [General]
 AUTO_COMPILE_DEPS=true
 COMPILE_LIB=false
+C_FLAGS="-std=c99"
+DEPENDENCIES=@Invalid()
