@@ -39,6 +39,7 @@ int main(){
 			for (int s = 500; s < 1000; s+=25) {
 				set_servo_position(0,s);
 				msleep(141);
+				camera_update();
 				location = -1;
 				if (get_object_count(0) > 0) {
 					break;
@@ -53,6 +54,7 @@ int main(){
 			for (int se = 1000; se > 500; se-=25) {
 				set_servo_position(0,se);
 				msleep(141);
+				camera_update();
 				location = 1;
 				if (get_object_count(0) > 0) {
 					break;
