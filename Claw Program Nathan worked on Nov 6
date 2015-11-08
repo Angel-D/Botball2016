@@ -1,0 +1,37 @@
+// Created on Fri November 6 2015
+
+int main()
+{
+	int x = 1;
+	while(x == 1) {
+		if (digital(13)==1) {
+			while (digital(13)==1) {
+				msleep(100);
+				if (digital(14)==1) {
+					motor(0,100);
+					motor(1,0);
+				} else {
+					motor(1,100);
+					motor(0,0);
+				}
+			}
+		}
+		
+		if (digital(15)==1) {
+			while (digital(15)==1) {
+				msleep(100);
+				if (digital(14)==1) {
+					motor(0,-100);
+					motor(1,0);
+				} else {
+					motor(1,-100);
+					motor(0,0);
+				}
+			}
+		}
+		
+		motor(0,0);
+		motor(1,0);
+		msleep(100);
+	}
+}
